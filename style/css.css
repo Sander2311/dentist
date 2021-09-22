@@ -1,0 +1,141 @@
+@font-face{
+
+    font-family: 'Panton';
+    
+    src: url('fonts/Panton-SemiBold.eot');
+    
+    src: url('fonts/Panton-SemiBold.eot?iefix') format('eot'),
+    
+    url('fonts/Panton-SemiBold.woff') format('woff'),
+    
+    url('fonts/Panton-SemiBold.ttf') format('truetype'),
+    
+    url('../fonts/WebFont.svg#webfont') format('svg');
+    
+    font-weight: 600;
+    
+    font-style: normal;
+    
+    }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 31px 130px 25px 130px;
+}
+
+.logo{
+    margin-right: 45px;
+}
+
+.nav{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-block{
+    margin-right: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.nav-block a{
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
+.nav-block a:hover{
+    color: #01678A;
+}
+
+.nav-block:last-child{
+    margin-right: 0;
+}
+
+.wrapper-num{
+    display: flex;
+    align-items: center;
+}
+.wrapper-phone{
+    display: flex;
+}
+
+.wrapper-phone div{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.wrapper-num button{
+    margin-left: 25px;
+}
+
+.phone-button{
+    color: #FFFFFF;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    width: 185.68px;
+    height: 41.2px;
+    background: #38BCEA;
+    border: 1px solid #38BCEA;
+    border-radius: 3px;
+}
+
+.main-img{
+    width: 1766.29px;
+    height: 628.51px;
+    background: url("../images/dentist-girl.jpg");
+}
+
+.block-on-main-img{
+    width: 949.9px;
+    height: 628.5px;
+    background: linear-gradient(90deg, #FFFFFF 48.07%, rgba(255, 255, 255, 0) 100%);
+}
+
+.wrapper-text-on-main-img{
+    position: relative;
+    top: 146px;
+    margin-left: 130px;
+}
+
+.wrapper-text-on-main-img p{
+    color: #6F6F6F;
+    width: 464.71px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.wrapper-text-on-main-img p:nth-of-type(2){
+    margin-bottom: 37px;
+}
+
+.wrapper-text-on-main-img h1{
+    width: 351.85px;
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 104.19%;
+}
+
+.wrapper-text-on-main-img button{
+    width: 295.86px;
+    height: 60.27px;
+    background: #38BCEA;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2);
+    border: 1px solid #38BCEA;
+    border-radius: 2px;
+}
