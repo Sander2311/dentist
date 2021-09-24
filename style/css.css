@@ -20,7 +20,6 @@
 
 header{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 31px 130px 25px 130px;
 }
@@ -99,7 +98,7 @@ header{
 }
 
 .block-on-main-img{
-    width: 949.9px;
+    width: 50%;
     height: 628.5px;
     background: linear-gradient(90deg, #FFFFFF 48.07%, rgba(255, 255, 255, 0) 100%);
 }
@@ -112,7 +111,7 @@ header{
 
 .wrapper-text-on-main-img p{
     color: #6F6F6F;
-    width: 464.71px;
+    max-width: 464.71px;
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -125,7 +124,7 @@ header{
 }
 
 .wrapper-text-on-main-img h1{
-    width: 351.85px;
+    max-width: 351.85px;
     font-family: "Panton";
     font-style: normal;
     font-weight: bold;
@@ -223,7 +222,7 @@ header{
 }
 
 .services-h2 p{
-    width: 439.19px;
+    max-width: 439.19px;
     font-family: Arial;
     font-style: normal;
     font-weight: normal;
@@ -236,11 +235,10 @@ header{
     margin-left: 124.31px;
     margin-right: 149.04px;
     margin-bottom: 111.31px;
-    height: 508.55px;
     display: grid;
     gap: 40px 35px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-auto-rows: 236.71px;
 }
 
 .services > div{
@@ -259,4 +257,570 @@ header{
     font-size: 26px;
     line-height: 32px;
     text-align: center;
+}
+
+.trust-wrapper{
+    background: #FBFBFB;
+    padding: 124.33px 145.12px 124.33px 123.9px;
+    margin-bottom: 103.62px;
+}
+
+.trust > h2{
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #272727;
+    margin-bottom: 60px;
+}
+
+.trust-elements{
+    display: grid;
+    gap: 38.25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: max-content;
+}
+
+.trust-elements > div{
+    background-color: #fff;
+    padding: 58px 26.56px 58.35px 37.52px;
+}
+
+.trust-elements > div > div{
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: #38BCEA;
+}
+
+.trust-elements > div > h3{
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #222222;
+}
+
+.trust-elements > div > p{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #292929;
+}
+
+.specialists-h2{
+    margin-left: 130px;
+    margin-bottom: 72.94px;
+}
+
+.specialists-h2 h2{
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: #12354B;;
+}
+
+.specialists-h2 p{
+    max-width: 526.06px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #737373;
+}
+
+.specialists-wrapper{
+    display: grid;
+    gap: 66.63px 53.33px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 127.55px;
+    margin-right: 139.99px;
+    margin-bottom: 185px;
+}
+
+.specialists{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 54.71px;
+    background: linear-gradient(255.02deg, #F7F8FA -0.59%, #EFF0F4 100%);
+    box-shadow: 0px 13px 50px rgba(192, 192, 192, 0.2);
+    border-radius: 4px;
+}
+
+.specialists-information{
+    margin-top: 59.02px;
+}
+
+.specialists-information h3{
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 296px;
+    color: #363636;
+}
+
+.specialists-information p{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #3E3E3E;
+}
+
+.specialists img{
+    height: 100%;
+    align-self: center;
+}
+
+.certificates-h2{
+    margin-left: 130px;
+    margin-bottom: 92.75px;
+}
+
+.certificates-h2 h2{
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: #12354B;
+}
+
+.certificates-wrapper{
+    display: grid;
+    gap: 18.5px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 130px;
+    margin-right: 140px;
+    margin-bottom: 223.18px;
+}
+
+.certificates-wrapper img{
+    width: 100%;
+}
+
+
+.footer-wrapper{
+    position: relative;
+    background: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
+    padding: 63px 145px 60px 124px;
+}
+
+.consultation{
+    width: 62%;
+}
+
+.consultation h2{
+    font-family: "Panton";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+
+    color: #000000;
+}
+.first-p{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    width: 78%;
+    color: #262626;
+}
+
+.first-p span{
+    color: #38BCEA;
+}
+
+.consultation form input{
+    border: none;
+    width: 232.97px;
+    height: 71.02px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    padding-left: 27px;
+    margin-right: 20px;
+}
+
+.consultation form button{
+    width: 323.78px;
+    height: 71.02px;
+    background: #38BCEA;
+    border-radius: 5px; 
+    border: 1px solid #38BCEA;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.second-p{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #4E4E4E;
+}
+
+.second-p span{
+    text-decoration: underline;
+}
+
+.footer-img img{
+    position: absolute;
+    top: -120px;
+    right: 0;
+    width: 45%;
+    height: 110%;   
+}
+
+.footer-bottom{
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr 1fr;
+    padding: 61px 144px 60px 138px;
+    background: #F2F3F5;
+}
+
+.icons img{
+    margin-right: 45px;
+}
+
+.copirait{
+    text-align: center;
+}
+
+.fraza{
+    text-decoration: underline;
+}
+
+.footer-logo{
+    justify-self: end;
+}
+
+@media (max-width: 1400px) {
+    header{
+        margin: 31px 100px 25px 100px;
+    }
+
+    .wrapper-text-on-main-img{
+        top: 100px;
+        margin-left: 100px;
+    }
+
+    .services-h2{
+        margin-left: 100px;
+    }
+
+    .services{
+        margin-left: 100px;
+        margin-right: 100px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .trust-wrapper{
+        padding: 124.33px 100px 124.33px 100px;
+    }
+
+    .trust-elements{
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .specialists-h2{
+        margin-left: 100px;
+    }
+
+    .specialists-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .specialists{
+        justify-content: space-evenly;
+    }
+
+    .certificates-h2{
+        margin-left: 100px;
+    }
+
+    .certificates-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 100px;
+        margin-right: 100px;
+  }
+  .footer-img img{
+      display: none;
+  }
+  .consultation{
+      width: 100%;
+  }
+
+  .consultation h2{
+      text-align: center;
+  }
+
+  .first-p{
+      width: 100%;
+  }
+  
+  .consultation p{
+    text-align: center;
+}
+
+  .footer-wrapper{
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+
+  .footer-bottom{
+      grid-template-columns: 1fr;
+      gap: 10px;
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+  .icons img{
+    margin-right: 25px;   
+}
+
+.icons{
+    margin: 0 auto;
+}
+
+.fraza{
+    text-align: center;
+}
+
+.footer-logo{
+    justify-self: center;
+}
+}
+
+  @media (max-width: 990px) {
+    header{
+        display: block;
+        margin: 31px 25px 25px 25px;
+    }
+
+    .wrapper-text-on-main-img{
+        top: 50px;
+        margin-left: 50px;
+        text-align: center;
+    }
+
+    .wrapper-text-on-main-img button{
+        width: 255.86px;
+        height: 50.27px;
+    }
+
+    .wrapper-bottom-blocks{
+        position: static;
+        display: grid;
+        gap: 2px;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .bottom-block{
+        background-color: #fff;
+        margin-right: 0;
+        border: 1px solid #38BCEA;
+        border-radius: 5px;
+    }
+
+    .first{
+        justify-content: center;
+    }
+    
+    .second{
+        justify-content: center;
+    }
+    
+    .third{
+        grid-column: 1/3;
+        justify-content: center;
+    }
+
+    .services-h2{
+        margin-left: 25px;
+    }
+
+    .services{
+        margin-left: 50px;
+        margin-right: 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .trust-wrapper{
+        padding: 124.33px 50px 124.33px 50px;
+    }
+
+    .trust-elements{
+        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .specialists-h2{
+        margin-left: 50px;
+    }
+
+    .specialists-wrapper{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .certificates-h2{
+        margin-left: 50px;
+    }
+
+    .certificates-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+        margin-right: 50px;
+  }
+  .consultation form input{
+      width: 200px;
+      margin-right: 0;
+  }
+
+  .consultation form button{
+      width: 200px;
+  }
+
+  .footer-wrapper{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer-bottom{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+}
+
+  @media (max-width: 770px) {
+    header{
+        display: block;
+        margin: 31px 0 25px 0;
+    }
+
+    .block-on-main-img{
+        width: 100%;
+    }
+
+    .wrapper-text-on-main-img{
+        margin-left: 0 auto;
+        top: 50px;
+        margin-left: 0;
+    }
+
+    .wrapper-text-on-main-img button{
+        width: 225.86px;
+        height: 50.27px;
+    }
+
+    .wrapper-bottom-blocks{
+        grid-template-columns: 1fr;
+    }
+
+    .third{
+        grid-column: 1/2;
+    }
+    .services{
+        gap: 5px;
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust h2{
+        font-size: 30px;
+    }
+
+    .trust-wrapper{
+        padding: 124.33px 25px 124.33px 25px;
+    }
+
+    .specialists-h2{
+        margin-left: 10px;
+    }
+
+    .specialists-h2 h2{
+        font-size: 30px;
+    }
+
+    .specialists-wrapper{
+        margin-left: 0;
+        margin-right: 0;
+        gap: 25px;
+    }
+
+    .specialists{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding-left: 0;
+    }
+
+    .specialists-information{
+        margin-top: 0;
+        text-align: center;
+        align-self: center;
+    }
+
+    .specialists-information h3{
+        margin: 0 auto;
+    }
+
+    .specialists img{
+        height: 50%;
+    }
+    .certificates-h2{
+        margin-left: 10px;
+    }
+
+    .certificates-h2 h2{
+        font-size: 30px;
+    }
+
+    .certificates-wrapper{
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+  }
+  .footer-wrapper{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer-bottom{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.consultation h2{
+    font-size: 30px;
+}
 }
