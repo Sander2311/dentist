@@ -45,11 +45,11 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-}
 
-.nav-block{
+
+    &-block{
     margin-right: 35px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontFamilyRoboto;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -60,17 +60,22 @@ header{
     color: #AAAAAA;
 
         &:hover{
-        color: #01678A;
+        color: $darkBlueColor;
     }}
 
     &:last-child{
     margin-right: 0;
-}}
+}}}
 
 .wrapper-num{
     display: flex;
     align-items: center;
-}
+
+
+    & button{
+        margin-left: 25px;
+}}
+
 .wrapper-phone{
     display: flex;
 
@@ -83,23 +88,20 @@ header{
         line-height: 22px;
 }}
 
-.wrapper-num button{
-    margin-left: 25px;
-}
 
 .phone-button{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
-    font-family: "Roboto";
+    font-family: $fontFamilyRoboto;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 18px;
     padding: 8.13px 11.69px;
-    background: #38BCEA;
-    border: 1px solid #38BCEA;
+    background: $blueColor;
+    border: 1px solid $blueColor;
     border-radius: 3px;
 }
 
@@ -117,7 +119,7 @@ header{
 .block-on-main-img{
     width: 50%;
     height: 628.5px;
-    background: linear-gradient(90deg, #FFFFFF 48.07%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, $whiteColor 48.07%, rgba(255, 255, 255, 0) 100%);
 }
 
 .wrapper-text-on-main-img{
@@ -142,7 +144,7 @@ header{
 
     & h1{
     max-width: 351.85px;
-    font-family: "Panton";
+    font-family: $fontFamilyPanton;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -154,11 +156,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: $whiteColor;
     padding: 14.38px 30px;
-    background: #38BCEA;
+    background: $blueColor;
     box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.2);
-    border: 1px solid #38BCEA;
+    border: 1px solid $blueColor;
     border-radius: 2px;
 }}
 
@@ -177,8 +179,32 @@ header{
 
 
     &:last-child{
-    margin-right: 0;
-}}
+        margin-right: 0;
+}
+    & img{
+        width: 44px;
+        height: 44px;
+        margin-right: 20px;
+}
+
+    & div{
+        font-family: "Arial";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #4B4B4B;
+        width: 290.81px;
+}
+
+    &:nth-child(2) div{
+        width: 185px;
+}
+
+    &:nth-child(3) div{
+        width: 185px;
+}
+}
 
 .first{
     display: flex;
@@ -202,30 +228,6 @@ header{
     align-items: center;
     justify-content: flex-start;
     flex-grow: 1;
-}
-
-.bottom-block img{
-    width: 44px;
-    height: 44px;
-    margin-right: 20px;
-}
-
-.bottom-block div{
-    font-family: "Arial";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: #4B4B4B;
-    width: 290.81px;
-}
-
-.bottom-block:nth-child(2) div{
-    width: 185px;
-}
-
-.bottom-block:nth-child(3) div{
-    width: 185px;
 }
 
 .services-h2{
@@ -257,25 +259,25 @@ header{
     gap: 40px 35px;
     grid-template-columns: repeat(5, 1fr); 
     grid-auto-rows: 236px;
+
+
+    & > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: #FBFBFB;
+        border-radius: 5px;
 }
 
-.services > div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background: #FBFBFB;
-    border-radius: 5px;
-}
-
-.services > div > div{
-    font-family: "Panton";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
-}
+    & > div > div{
+        font-family: $fontFamilyPanton;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        text-align: center;
+}}
 
 .trust-wrapper{
     background: #FBFBFB;
@@ -284,7 +286,7 @@ header{
 }
 
 .trust > h2{
-    font-family: "Panton";
+    font-family: $fontFamilyPanton;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
@@ -298,67 +300,67 @@ header{
     gap: 38.25px;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: max-content;
+
+
+    & > div{
+        background-color: $whiteColor;
+        padding: 58px 26.56px 58.35px 37.52px;
 }
 
-.trust-elements > div{
-    background-color: #fff;
-    padding: 58px 26.56px 58.35px 37.52px;
+    & > div > div{
+        font-family: $fontFamilyPanton;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 58px;
+        color: $blueColor;
+        margin-bottom: 7.73px;
 }
 
-.trust-elements > div > div{
-    font-family: "Panton";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 58px;
-    color: #38BCEA;
-    margin-bottom: 7.73px;
+    & > div > h3{
+        font-family: $fontFamilyPanton;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 7.73px;
+
+        color: #222222;
 }
 
-.trust-elements > div > h3{
-    font-family: "Panton";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 7.73px;
+    & > div > p{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
 
-    color: #222222;
-}
-
-.trust-elements > div > p{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-
-    color: #292929;
-}
+        color: #292929;
+}}
 
 .specialists-h2{
     margin-bottom: 72.94px;
+
+
+    & h2{
+        font-family: $fontFamilyPanton;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 59px;
+        color: #12354B;
+        margin-bottom: 13.97px;
 }
 
-.specialists-h2 h2{
-    font-family: "Panton";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    color: #12354B;
-    margin-bottom: 13.97px;
-}
-
-.specialists-h2 p{
-    max-width: 526.06px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #737373;
-}
+    & p{
+        max-width: 526.06px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        color: #737373;
+}}
 
 .specialists-wrapper{
     display: grid;
@@ -374,83 +376,118 @@ header{
     background: linear-gradient(255.02deg, #F7F8FA -0.59%, #EFF0F4 100%);
     box-shadow: 0px 13px 50px rgba(192, 192, 192, 0.2);
     border-radius: 4px;
+
+
+    &-information h3{
+        font-family: $fontFamilyPanton;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+        max-width: 296px;
+        color: #363636;
+        margin-bottom: 14px;
 }
 
-.specialists-information h3{
-    font-family: "Panton";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-    max-width: 296px;
-    color: #363636;
-    margin-bottom: 14px;
+    &-information p{
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 11.25px;
+
+        color: #3E3E3E;
 }
 
-.specialists-information p{
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    margin-bottom: 11.25px;
-
-    color: #3E3E3E;
-}
-
-.specialists img{
-    align-self: flex-start;
-    margin-top: -50px;
-}
+    & img{
+        align-self: flex-start;
+        margin-top: -50px;
+}}
 
 .certificates-h2{
     margin-bottom: 92.75px;
-}
 
-.certificates-h2 h2{
-    font-family: "Panton";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
 
-    color: #12354B;
-}
+    & h2{
+        font-family: $fontFamilyPanton;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 59px;
+
+        color: #12354B;
+}}
 
 .certificates-wrapper{
     display: grid;
     gap: 18.5px;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 220px;
-}
 
-.certificates-wrapper img{
-    width: 100%;
-}
+
+    & img{
+        width: 100%;
+}}
 
 .footer{
-    background-color: #fff;
+    background-color: $whiteColor;
     padding-top: 0;
-}
 
-.footer-wrapper{
-    background: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
-    padding: 63px 0 60px 0;
-}
+
+    &-wrapper{
+        background: linear-gradient(84.27deg, #E6F2FF 0%, #FAF1ED 100%);
+        padding: 63px 0 60px 0;
+}}
 
 .consultation{
     width: 50%;
+
+
+    & h2{
+        font-family: $fontFamilyPanton;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 59px;
+        margin-bottom: 43.52px;
+        color: #000000;
 }
 
-.consultation h2{
-    font-family: "Panton";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 59px;
-    margin-bottom: 43.52px;
-    color: #000000;
+    & form{
+        margin-bottom: 32.62px;
 }
+
+    & form input{
+        border: none;
+        width: 232.97px;
+        height: 71.02px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 31px;
+        padding-left: 27px;
+        margin-right: 20px;
+        background-color: $whiteColor;
+}
+
+    & form button{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 34px;
+        background: $blueColor;
+        border-radius: 5px; 
+        border: 1px solid $blueColor;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 31px;
+        color: $whiteColor;
+}}
+
 .first-p{
     font-family: Arial;
     font-style: normal;
@@ -460,45 +497,11 @@ header{
     width: 78%;
     color: #262626;
     margin-bottom: 37.58px;
-}
 
-.first-p span{
-    color: #38BCEA;
-}
 
-.consultation form{
-    margin-bottom: 32.62px;
-}
-
-.consultation form input{
-    border: none;
-    width: 232.97px;
-    height: 71.02px;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 31px;
-    padding-left: 27px;
-    margin-right: 20px;
-    background-color: #fff;
-}
-
-.consultation form button{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 34px;
-    background: #38BCEA;
-    border-radius: 5px; 
-    border: 1px solid #38BCEA;
-    font-family: Arial;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 31px;
-    color: #FFFFFF;
-}
+    & span{
+        color: $blueColor;
+}}
 
 .second-p{
     font-family: Arial;
@@ -508,11 +511,11 @@ header{
     line-height: 23px;
 
     color: #4E4E4E;
-}
 
-.second-p span{
-    text-decoration: underline;
-}
+
+    & span{
+        text-decoration: underline;
+}}
 
 .flex{
     display: flex;
@@ -520,11 +523,11 @@ header{
 
 .footer-img{
     width: 50%;
-}
 
-.footer-img img{
-    margin-top: -180px;
-}
+
+    & img{
+        margin-top: -180px;
+}}
 
 .footer-bottom{
     
@@ -540,14 +543,14 @@ header{
 
 .icons{
     display: flex;
-}
 
-.icons img{
-    width: 32px;
-    height: 33px;
-    margin-right: 45px;
-    cursor: pointer;
-}
+
+    & img{
+        width: 32px;
+        height: 33px;
+        margin-right: 45px;
+        cursor: pointer;
+}}
 
 .copirait{
     text-align: center;
@@ -606,19 +609,20 @@ header{
   }
   .consultation{
       width: 100%;
+  
+
+    & h2{
+         text-align: center;
   }
 
-  .consultation h2{
-      text-align: center;
-  }
+    & p{
+        text-align: center;
+}
+}
 
   .first-p{
       width: 100%;
   }
-  
-  .consultation p{
-    text-align: center;
-}
 
   .grid{
       grid-template-columns: 1fr;
@@ -686,19 +690,18 @@ header{
     }
 
     .bottom-block{
-        background-color: #fff;
+        background-color: $whiteColor;
         margin-right: 0;
-        border: 1px solid #38BCEA;
+        border: 1px solid $blueColor;
         border-radius: 5px;
     }
 
     .first{
         justify-content: center;
-    }
     
-    .first div{
-        width: 185px;
-    }
+       & div{
+            width: 185px;
+    }}
 
     .second{
         justify-content: center;
@@ -726,7 +729,7 @@ header{
         grid-template-columns: 1fr;
   }
 
-  .footer-img {
+  .footer-img{
    display: none;
 }
 
@@ -792,22 +795,22 @@ header{
         flex-direction: column-reverse;
         justify-content: space-evenly;
         padding: 0;
-    }
+    
 
-    .specialists-information{
-        margin-top: 0;
-        text-align: center;
-        align-self: center;
-    }
+        &-information{
+            margin-top: 0;
+            text-align: center;
+            align-self: center;
+    
 
-    .specialists-information h3{
-        margin: 0 auto;
-    }
+            & h3{
+                margin: 0 auto;
+    }}
 
-    .specialists img{
-        height: 50%;
-        margin: 0 auto;
-    }
+        & img{
+            height: 50%;
+            margin: 0 auto;
+    }}
 
     .certificates-h2 h2{
         font-size: 36px;
